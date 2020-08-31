@@ -199,5 +199,22 @@ end
 
 
 def big_shoe_rebounds
-  
+  array1 = []
+    test[:home][:players].each do |v|
+      array1 << v[:shoe]
+    end
+    test[:away][:players].each do |v|
+      array1 << v[:shoe]
+    end
+   shoe_mx = array1.max
+   test[:home][:players].each do |v|
+     if v[:shoe] == shoe_mx
+       return v[:rebounds]
+     end
+     end
+   test[:away][:players].each do |v|
+       if v[:shoe] == shoe_mx
+         return v[:rebounds]
+       end
+       end
 end
