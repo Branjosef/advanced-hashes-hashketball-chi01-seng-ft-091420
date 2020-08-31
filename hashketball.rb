@@ -207,8 +207,8 @@ def big_shoe_rebounds
       array1 << v[:shoe]
     end
    shoe_max = array1.max
-   test[:home][:players].each do |v|
-     if v[:shoe] == shoe_mx
+   game_hash[:home][:players].each do |v|
+     if v[:shoe] == shoe_max
        return v[:rebounds]
      end
      end
