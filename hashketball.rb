@@ -212,8 +212,8 @@ def big_shoe_rebounds
        return v[:rebounds]
      end
      end
-   test[:away][:players].each do |v|
-       if v[:shoe] == shoe_mx
+   game_hash[:away][:players].each do |v|
+       if v[:shoe] == shoe_max
          return v[:rebounds]
        end
        end
