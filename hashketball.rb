@@ -141,3 +141,7 @@ game_hash[:away][:players].each do |v|
 end
 end
 
+def shoe_size(player)
+  
+end
+
