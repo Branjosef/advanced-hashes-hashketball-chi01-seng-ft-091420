@@ -158,7 +158,7 @@ def team_colors(team)
 if game_hash[:home][:team_name] == team
   return "#{game_hash[:home][:colors][0]}, #{game_hash[:home][:colors][1]}"
 end
-if test[:away][:team_name] == team
+if game_hash[:away][:team_name] == team
   return "#{test[:away][:colors][0]}, #{test[:away][:colors][1]}"
 end
 end
