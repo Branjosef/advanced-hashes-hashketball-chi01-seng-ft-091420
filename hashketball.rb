@@ -165,5 +165,9 @@ if game_hash[:away][:team_name] == team
 end
 end
 
+def team_names
+
+end
+
 
 
