@@ -169,7 +169,7 @@ def team_names
    p array1 = [home_team, away_team]
 end
 
-player_stats(player)
+def player_stats(player)
 
-
+end
 
