@@ -166,7 +166,9 @@ end
 end
 
 def team_names
-
+ home_team = game_hash[:home][:team_name]
+   away_team = game_hash[:away][:team_name]
+   p array1 = [home_team, away_team]
 end
 
 
