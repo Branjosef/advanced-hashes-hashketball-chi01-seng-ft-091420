@@ -200,7 +200,7 @@ end
 
 def big_shoe_rebounds
   array1 = []
-    test[:home][:players].each do |v|
+    game_hash[:home][:players].each do |v|
       array1 << v[:shoe]
     end
     test[:away][:players].each do |v|
