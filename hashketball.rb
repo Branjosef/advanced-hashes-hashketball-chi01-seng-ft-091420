@@ -184,7 +184,7 @@ end
 
 def player_numbers(team)
   array1 = []
-  if test[:home][:team_name] == team
+  if game_hash[:home][:team_name] == team
     test[:home][:players].each do |v|
       array1 << v[:number]
     end
