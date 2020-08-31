@@ -182,3 +182,18 @@ game_hash[:away][:players].each do |v|
 end
 end
 
+def player_numbers(team)
+  array1 = []
+  if test[:home][:team_name] == team
+    test[:home][:players].each do |v|
+      array1 << v[:number]
+    end
+  end
+  if test[:away][:team_name] == team
+    test[:away][:players].each do |v|
+      array1 << v[:number]
+    end
+  end
+  p array1
+end
+
