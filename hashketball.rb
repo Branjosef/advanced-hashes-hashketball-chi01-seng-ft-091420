@@ -170,6 +170,15 @@ def team_names
 end
 
 def player_stats(player)
-
+ game_hash[:home][:players].each do |v|
+  if v[:player_name] == player
+    return v
+  end
+end
+game_hash[:away][:players].each do |v|
+  if v[:player_name] == player
+    return v
+  end
+end
 end
 
