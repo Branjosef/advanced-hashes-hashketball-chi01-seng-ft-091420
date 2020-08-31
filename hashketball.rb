@@ -194,6 +194,6 @@ def player_numbers(team)
       array1 << v[:number]
     end
   end
-  p array1
+   return array1
 end
 
