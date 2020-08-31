@@ -157,11 +157,9 @@ end
 def team_colors(team)
 if game_hash[:home][:team_name] == team
   return game_hash[:home][:colors]
-  #return "#{game_hash[:home][:colors][0]}, #{game_hash[:home][:colors][1]}"
 end
 if game_hash[:away][:team_name] == team
   return game_hash[:away][:colors]
-  #return "#{game_hash[:away][:colors][0]}, #{game_hash[:away][:colors][1]}"
 end
 end
 
@@ -170,6 +168,8 @@ def team_names
    away_team = game_hash[:away][:team_name]
    p array1 = [home_team, away_team]
 end
+
+player_stats(player)
 
 
 
